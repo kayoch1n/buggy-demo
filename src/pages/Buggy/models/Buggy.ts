@@ -21,7 +21,8 @@ const BuggyModel: IBuggyModelType = {
       yield put({
         type: 'MERGE',
         payload: {key: 'buggyStatus', value: resp}
-      })
+      });
+      return resp;
     }
   },
   reducers: {
