@@ -6,6 +6,7 @@ export default defineConfig({
   },
   routes: [
     { path: '/', component: '@/pages/index' },
+    { path: '/buggy', component: '@/pages/Buggy/index.tsx' },
   ],
   fastRefresh: {},
 });
