@@ -11,7 +11,7 @@ const initState: IBuggyModelState = {
   buggyStatus: {}
 }
 
-const BuggyModel: IBuggyModelType = {
+const BuggyModel: IBuggyModelType = (console.log('hello'), {
   namespace,
   state: {...initState},
   effects: {
@@ -32,6 +32,6 @@ const BuggyModel: IBuggyModelType = {
       return ret;
     }
   }
-}
+})
 
 export default BuggyModel;
